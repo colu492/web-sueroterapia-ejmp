@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -10,7 +13,91 @@ html{
 
 body{
     font-family: 'Raleway', sans-serif;
+    background-image: url('/img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100dvh;
 }
+
+/*nav bar*/
+
+        header {
+            background-color: #19253b59;
+            box-shadow: 0 0 36px 0;
+            backdrop-filter: blur(3px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 80%;
+            margin: auto;
+            padding: 1.2rem 0rem;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+
+        }
+        .logo img{
+            width: 200px;
+        }
+
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding: 0;
+            background-color: transparent;
+            overflow: hidden;
+        }
+
+        li {
+            padding: 0rem 1.1rem;
+            float: left;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+        }
+
+        li a:hover {
+            color: #91b2ff;
+            transition: all .3s ease-in-out
+        }
+
+        .button {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .button button {
+            font-weight: 500;
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: transparent;
+            padding: .5rem 1rem;
+            border-radius: 20%;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: #fff;
+            color: #152939;
+            transition: all .3s ease-in-out;
+        }
 
 .hero{
     background-image: linear-gradient(120deg, rgba(134, 178, 253, 0.699) 0%, rgba(27, 42, 85, 0.692) 100%), url("../img/header.jpg");
@@ -42,14 +129,25 @@ body{
     margin-bottom: 20px;
 }
 
-.textos-hero a{
+.btn_contacto{
+    --color: #009dff;
+    position: relative;
     display: inline-block;
     text-decoration: none;
-    padding: 12px 15px;
-    background: #8ca4d1;
-    border-radius: 8px;
+    font-size: 18px;
     color: #fff;
+    padding: 5px 10px;
+    transition: 0.5s;
+    border: 3px solid var(--color);
 }
+.btn_contacto:hover{
+    border: 3px solid #cbdfff;
+
+}
+.blue{
+    color: #009dff;
+}
+
 
 .svg-hero{
     position: absolute;
@@ -66,10 +164,17 @@ body{
     max-width: 1000px;
     overflow: hidden;
     margin: auto;
-    padding: 0 0 80px 0;
+    padding: 50px 0 80px 0;
 }
 .contenedor{
     padding: 80px 0;
+}
+.contenedor_nosotros{
+    padding: 80px 0;
+}
+.contenedor_nosotros p{
+    text-align: center;
+    padding: 50px;
 }
 
 .titulo{
@@ -140,6 +245,7 @@ body{
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
     transform: scale(1);
     transition: transform 0.6s;
+    border-radius: 20px;
 }
 
 .card:hover{
@@ -182,6 +288,7 @@ body{
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
     cursor: pointer;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 /* info2 */
@@ -203,6 +310,8 @@ body{
 
 
 /* footer */
+
+
 
 footer{
     background: #576cf5;
@@ -253,6 +362,49 @@ input[type="submit"]:hover{
     background: #fff;
 }
 
+/*Redes*/
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+.redes ul li a{
+    display: block;
+    padding: 0 10px 0 10px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.redes ul:hover a{
+    filter: blur(2px);
+
+}
+.redes ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+.redes ul li .facebook:hover{
+    background: #2374E1;
+}
+.redes ul li .instagram:hover{
+    background: #fe0ec2;
+}
+redes ul li .twitter:hover{
+    background: #1d9bf0;
+}
 @media screen and (max-width:800px){
     .textos-hero h1{
         text-align: center;

@@ -7,15 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page HTML | AlexCG Design</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/public/css/estilos.css">
 </head>
 
 <body>
     <header class="hero">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="/public/img/logo.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Sueroterapia</a></li>
+                <li><a href="#">contacto</a></li>
+            </ul>
+        </nav>
         <div class="textos-hero">
-            <h1>Sueroterapia</h1>
-            <p>Servicios de enfermería</p>
-            <a href="#contacto">Contactanos</a>
+            <h1>
+                Sueroterapia
+            </h1>
+            <p>Siempre contigo</p> </button>
+            <a class="btn_contacto" href="#contacto">Contactanos</a>
         </div>
         <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -26,12 +40,12 @@
 
 
     <section class="wave-contenedor website">
-        <img src="img/ilustracion1.png" alt="">
+        <img src="/public/img/ilustracion1.png" alt="">
         <div class="contenedor-textos-main">
             <h2 class="titulo left">Servicios</h2>
             <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt enim reiciendis
                 molestias nam tempore. Ullam hic accusantium eligendi ipsam corrupti!</p>
-            <a href="" class="cta">Contactanos</a>
+            <a class="btn_contacto blue" href="#contacto">Contactanos</a>
         </div>
     </section>
 
@@ -43,7 +57,7 @@
     </section>
 
     <section class="cards contenedor">
-        <h2 class="titulo">Nuestros Clientes</h2>
+        <h2 class="titulo">Nuestros Servicios</h2>
         <div class="content-cards">
             <article class="card">
                 <i class="far fa-clone"></i>
@@ -67,15 +81,13 @@
     </section>
 
     <section class="galeria">
-        <div class="contenedor">
-            <h2 class="titulo">Nuestro trabajo</h2>
+        <div class="contenedor_nosotros">
+            <h2 class="titulo">Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <article class="galeria-cont">
-                <img src="img/uno.jpg" alt="">
-                <img src="img/dos.jpg" alt="">
-                <img src="img/tres.jpg" alt="">
-                <img src="img/cuatro.jpg" alt="">
-                <img src="img/cinco.jpg" alt="">
-                <img src="img/seis.jpg" alt="">
+                <img src="/public/img/uno.jpg" alt="">
+                <img src="/public/img/dos.jpg" alt="">
+                <img src="/public/img/tres.jpg" alt="">
             </article>
         </div>
     </section>
@@ -86,9 +98,9 @@
             <div class="contenedor-textos-main">
                 <h2 class="titulo left">Misión</h2>
                 <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum reprehenderit nostrum expedita quasi odio architecto laudantium sunt nemo dicta atque?</p>
-                <a href="" class="cta">Learn more</a>
+                <a href="" class="btn_contacto blue">Learn more</a>
             </div>
-            <img src="img/ilustracion.png" alt="">
+            <img src="/public/img/ilustracion.png" alt="">
         </div>
         
         <div class="svg-wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -108,7 +120,15 @@
                 <input class="input"  type="submit" value="Enviar">
             </form>
         </div>
+        <div class="redes">
+            <ul>
+                <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>                </li>
+                <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></li>
+                <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
     </footer>
+    
 
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
 </body>
