@@ -5,102 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing Page HTML | AlexCG Design</title>
+    <title>Cuidar Enfermeria</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 
 <body>
-    <header class="hero">
+    <header class="header_container">
+        <input type="checkbox" id="menu"/>
+
+        <label for="menu">
+            <img src="/assets/img/menu.png" class="menu_icon" alt="">
+        </label>
         <nav>
             <div class="logo">
-                <a href="#"><img src="/public/img/logo.png" alt=""></a>
+                <a href="#"><img src="/assets/img/logo.png" alt=""></a>
             </div>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Sueroterapia</a></li>
-                <li><a href="#">contacto</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sueroterapia">Sueroterapia</a></li>
+                <li><a href="#contacto">contacto</a></li>
             </ul>
         </nav>
-        <div class="textos-hero">
+        <div class="textos-header">
             <h1>
                 Sueroterapia
             </h1>
             <p>Siempre contigo</p> </button>
             <a class="btn_contacto" href="#contacto">Contactanos</a>
         </div>
-        <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div class="svg-hero" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: #fff;"></path>
-            </svg></div>
+            </svg>
+        </div>
     </header>
 
 
-    <section class="wave-contenedor website">
-        <img src="/public/img/ilustracion1.png" alt="">
+    <section class="wave-contenedor website" id="servicios">
+        <img src="/assets/img/ilustracion1.png" alt="">
         <div class="contenedor-textos-main">
             <h2 class="titulo left">Servicios</h2>
             <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt enim reiciendis
                 molestias nam tempore. Ullam hic accusantium eligendi ipsam corrupti!</p>
             <a class="btn_contacto blue" href="#contacto">Contactanos</a>
         </div>
+
     </section>
 
-    <section class="info">
-        <div class="contenedor">
-            <h2 class="titulo left">Juntos podemos apoyar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </section>
 
     <section class="cards contenedor">
+
         <h2 class="titulo">Nuestros Servicios</h2>
         <div class="content-cards">
             <article class="card">
-                <i class="far fa-clone"></i>
-                <h3>Title Card</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <a href="" class="cta">Learn more</a>
+                <img src="/assets/img/card_img_1.png" alt="">
+                <div class="card_info">
+                    <h3>ENFERMERÍA DOMICILIARIA Y HOSPITALARIA</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="" class="cta">Más Información</a>
+                </div>
             </article>
             <article class="card">
-                <i class="fas fa-database"></i>
-                <h3>Title Card</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <a href="" class="cta">Learn more</a>
+                <img src="/assets/img/card_img_2.png" alt="">
+                <div class="card_info">
+                    <h3>CUIDADO Y ACOMPAÑAMIENTO A CITAS MÉDICAS</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="" class="cta">Más Información</a>
+                </div>
             </article>
             <article class="card">
-                <i class="far fa-object-group"></i>
-                <h3>Title Card</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <a href="" class="cta">Learn more</a>
+                <img src="/assets/img/card_img_3.png" alt="">
+                <div class="card_info">
+                    <h3>CURACIONES DE ILEOSTOMÍA Y COLOSTOMÍA</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="" class="cta">Más Información</a>
+                </div>
             </article>
+        </div>
+        <div class="svg-hero-2" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #6ca8fc;"></path>
+            </svg>
         </div>
     </section>
 
-    <section class="galeria">
+    <section class="galeria" id="nosotros">
         <div class="contenedor_nosotros">
             <h2 class="titulo">Nosotros</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <article class="galeria-cont">
-                <img src="/public/img/uno.jpg" alt="">
-                <img src="/public/img/dos.jpg" alt="">
-                <img src="/public/img/tres.jpg" alt="">
+                <img src="/assets/img/uno.jpg" alt="">
+                <img src="/assets/img/dos.jpg" alt="">
+                <img src="/assets/img/tres.jpg" alt="">
             </article>
+            <a class="btn_contacto_nosotros" href="#contacto">Contactanos</a>
         </div>
+        
     </section>
+    
+    <div style="height: 150px; overflow: hidden; transform: rotate(180deg);">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0,100 C166.7,-50 333.3,-50 1100,600 L500,150 L0,150 Z" style="stroke: none; fill: #6ca8fc;"></path>
+        </svg>
+    </div>
+    <section class="info-last" id="mision">
 
-    <section class="info-last">
-
-        <div class="contenedor last-section">
+        <div class="contenedor_mision last-section">
             <div class="contenedor-textos-main">
-                <h2 class="titulo left">Misión</h2>
+                <h2>Misión</h2>
                 <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum reprehenderit nostrum expedita quasi odio architecto laudantium sunt nemo dicta atque?</p>
                 <a href="" class="btn_contacto blue">Learn more</a>
             </div>
-            <img src="/public/img/ilustracion.png" alt="">
+            <img src="/assets/img/ilustracion.png" alt="">
         </div>
         
         <div class="svg-wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -111,8 +134,8 @@
     </section>
 
     <footer id="contacto">
-        <div class="contenedor">
-            <h2 class="titulo">contacto</h2>
+        <div class="contenedor_footer">
+            <h2>Contacto</h2>
             <form action="" class="form">
                 <input class="input"  type="text" name="" id="" placeholder="Nombre">
                 <input class="input"  type="email" name="" id="" placeholder="Email">
@@ -126,6 +149,11 @@
                 <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></li>
                 <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></li>
             </ul>
+        </div>
+        <div class="declaracion_container">
+    
+            <p>Copyright ©CuidarEnfermeria</p>
+    
         </div>
     </footer>
     
